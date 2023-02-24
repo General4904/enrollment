@@ -1,0 +1,109 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+color: #2B1E5B;
+}
+
+header{
+margin-top: 0;
+padding: 1em;
+background-color: #2B1E5B;
+color: white;
+display: flex;
+justify-content: space-around;
+}
+
+h1{
+margin: 0;
+}
+
+#logo{
+width: 100px;
+}
+
+#enroll{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+form{
+margin: 1em;
+background-color: white;
+border: 1px solid #2B1E5B;
+border-radius: 8px;
+box-shadow: 1px 1px 5px 1px gray;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+form #head{
+padding: 1em;
+background-color: #2B1E5B;
+border-radius: 0 0 6px 6px;
+color: white;
+font-size: 22px;
+}
+
+
+form ul{
+padding: 3em 1em;
+list-style-type: none;
+}
+
+form ul li{
+margin: 2em ;
+}
+
+.form-control{
+width: 30em;
+height: 2em;
+}
+
+#info{
+margin-top: 100em ;
+}
+
+.btn{
+background-color: white;
+border: 1px solid #2B1E5B;
+color: #2B1E5B;
+transition-property: background-color;
+transition-duration: 0.8s;
+transition-delay: 0s;
+transition-timing-function: ease;
+box-shadow: 1px 1px 5px 0.8px gray;
+}
+
+.btn:hover{
+border: none;
+background-color: #2B1E5B;
+color: white;
+}
+
+.btn:focus{
+background-color: #2B1E5B;
+color: white;
+border: none;
+}
+
+.terms{
+color: #2B1E5B;
+font-size: 20px;
+}
+
+
+footer{
+padding: 1em;
+color: white;
+background-color: #2B1E5B;
+display: flex;
+justify-content: center;
+}
+
