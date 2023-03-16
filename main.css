@@ -1,109 +1,212 @@
-*{
-margin: 0;
-padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-body{
-color: #2B1E5B;
+body {
+	color: #2b1e5b;
 }
 
-header{
-margin-top: 0;
-padding: 1em;
-background-color: #2B1E5B;
-color: white;
-display: flex;
-justify-content: space-around;
+header {
+	margin: 0;
+	padding: 1em;
+	background-color: #2b1e5b;
+	color: white;
 }
 
-h1{
-margin: 0;
+header ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
-#logo{
-width: 100px;
+#logo {
+	width: 70px;
 }
 
-#enroll{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+h1 {
+	margin: 0;
 }
 
-form{
-margin: 1em;
-background-color: white;
-border: 1px solid #2B1E5B;
-border-radius: 8px;
-box-shadow: 1px 1px 5px 1px gray;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+#enrol {
+	margin: 5em;
 }
 
-form #head{
-padding: 1em;
-background-color: #2B1E5B;
-border-radius: 0 0 6px 6px;
-color: white;
-font-size: 22px;
+form {
+	margin: 5em;
+	padding: 0 0 3em 0;
+	border: 1px solid #2b1e5b;
+	border-radius: 6px;
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* justify-content: center; */
+	/* align-items: center; */
 }
 
-
-form ul{
-padding: 3em 1em;
-list-style-type: none;
+form header {
+	margin: 0 0 2em 0;
+	background-color: #2b1e5b;
+	color: white;
+	font-size: 22px;
 }
 
-form ul li{
-margin: 2em ;
+form .info {
+	margin-top: 4em;
+	padding: 0;
 }
 
-.form-control{
-width: 30em;
-height: 2em;
+input {
+	margin-bottom: 3em;
+	padding: 5px 5em 5px 5px;
+	border: 1px solid #2b1e5b;
+	border-radius: 6px;
 }
 
-#info{
-margin-top: 100em ;
+input value {
+	font-size: 15px;
 }
 
-.btn{
-background-color: white;
-border: 1px solid #2B1E5B;
-color: #2B1E5B;
-transition-property: background-color;
-transition-duration: 0.8s;
-transition-delay: 0s;
-transition-timing-function: ease;
-box-shadow: 1px 1px 5px 0.8px gray;
+.btn {
+	background-color: white;
+	border: 1px solid #2b1e5b;
+	color: #2b1e5b;
+	transition-property: background-color;
+	transition-duration: 0.8s;
+	transition-delay: 0s;
+	transition-timing-function: ease;
+	box-shadow: 1px 1px 5px 0.8px gray;
 }
 
-.btn:hover{
-border: none;
-background-color: #2B1E5B;
-color: white;
+.btn:hover {
+	border: none;
+	background-color: #2b1e5b;
+	color: white;
 }
 
-.btn:focus{
-background-color: #2B1E5B;
-color: white;
-border: none;
+.btn:focus {
+	background-color: #2b1e5b;
+	color: white;
+	border: none;
 }
 
-.terms{
-color: #2B1E5B;
-font-size: 20px;
+.terms {
+	color: #2b1e5b;
+	font-size: 20px;
 }
 
-
-footer{
-padding: 1em;
-color: white;
-background-color: #2B1E5B;
-display: flex;
-justify-content: center;
+footer {
+	padding: 1em;
+	color: white;
+	background-color: #2b1e5b;
+	display: flex;
+	justify-content: center;
 }
 
+/* ***SMALL DEVICES*** */
+@media (min-width: 150px) and (max-width: 562px) {
+	header {
+		margin: 0;
+	}
+
+	header ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	h1 {
+		font-size: 20px;
+		margin: 1em 0 0 0;
+		display: block;
+		/* color: black; */
+	}
+
+	form.row {
+		border: none;
+		margin: 2em 3px;
+		padding: 0 0 2em 0;
+	}
+
+	form header {
+		font-size: 16px;
+		padding: 1em 3px;
+		display: none;
+	}
+
+	form .container {
+		padding-right: 0;
+	}
+
+	form .row {
+		padding: 0;
+		width: 360px;
+	}
+
+	#enrol {
+		margin: 1em 0 1em 0;
+		padding: 0;
+	}
+
+	form #info {
+		width: 350px;
+		padding-right: 0;
+		margin-left: 0;
+	}
+
+	form input.form-control {
+		width: 22em;
+	}
+}
+
+/****************Medium Devices*****************/
+
+@media (min-width: 563px) and (max-width: 1000px) {
+	header {
+		margin: 0;
+	}
+
+	header ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	h1 {
+		font-size: 30px;
+		margin: 1em 0 0 0;
+		display: block;
+		/* color: black; */
+	}
+
+	form {
+		margin: 2em 3px;
+		padding: 0 0 2em 0;
+	}
+
+	form #head {
+		/* width: 450px; */
+		margin: 0;
+		padding: 1em;
+		font-size: 12px;
+		border-radius: 0;
+		text-align: center;
+	}
+
+	form .row {
+		padding: 0 1em;
+	}
+
+	form .info {
+		margin-top: 2.5em;
+		padding: 0;
+	}
+
+	#agree {
+		margin: 2em 0;
+	}
+}

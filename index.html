@@ -1,109 +1,177 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Enroll Now</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="images/reactLogo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  
-  <body>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Enroll Now</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href="images/reactLogo.png" type="image/x-icon" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
 
-    <header>
-      <div><img src= "images/logo.png" id= "logo"></div>
-      <h1>Apply to join the internship</h1>
-    </header>
-    
+	<body>
+		<header>
+			<ul>
+				<li><img src="images/logo.png" id="logo" /></li>
+				<li><h1>Apply to join the internship</h1></li>
+			</ul>
+		</header>
 
-    <div id= "enroll">
+		<div id= "enrol">
+		<form class="row g-3">
+			<header>Welcome To The Dev World</header>
+			<div class="container">
+				<div class="row">
+					<div id="info" class="col-lg-6 col-md-1">
+						<label for="inputSurname" class="form-label">Surname</label>
+						<input
+							type="text"
+							class="form-control"
+							id="surname"
+							placeholder="Michael"
+						/>
+					</div>
+					<div class="col-lg-6">
+						<label for="firstname" class="form-label">Firstname</label>
+						<input
+							type="text"
+							class="form-control"
+							id="surname"
+							placeholder="Joseph"
+						/>
+					</div>
+					<div class="col-lg-6">
+						<label for="inputEmail4" class="form-label">Email</label>
+						<input
+							type="email"
+							class="form-control"
+							id="inputEmail4"
+							placeholder="michaeljoseph@gmail.com"
+						/>
+					</div>
 
-    <form action= "#" method="POST">
+					<div class="col-lg-6">
+						<label for="inputEmail4" class="form-label">Phone Number</label>
+						<input
+							type="tel"
+							class="form-control"
+							id="inputEmail4"
+							placeholder="+234.........."
+						/>
+					</div>
 
-      <div id= "head">
-      <p>Begin Your Journey Through The Tech World</p>
-      </div>
+					<div class="col-lg-6">
+						<label for="inputPassword4" class="form-label">Password</label>
+						<input
+							type="password"
+							class="form-control"
+							id="inputPassword4"
+							placeholder="Enter Your Password"
+						/>
+					</div>
 
+					<div class="col-lg-4" >
+						<label for="inputState" class="form-label">Please Select A Course</label>
+						<select id="inputState" class="form-select">
+							<option selected value= "HTML">Choose A Cousre</option>
+							<option>HTML</option>
+							<option>CSS</option>
+							<option>JavaScript</option>
+							<option>React Js</option>
+							<option>Node Js</option>
+							<option>Java</option>
+							<option>Data Structures & Algorithms</option>
+							<option>Database Management System (MySQL)</option>
+							<option>Bootstrap</option>
+							<option>Mobile App Development With React Native</option>
+							<option>Git & GitHub</option>
+							<option>Web Programming</option>
+							<option>Cyber Security</option>
+							<option>SQL</option>
+							<option>System Design</option>
+							<option>MicroService</option>
+						</select>
+					</div>
 
-      <ul>
+					<div class="col-lg-2">
+						<label for="inputState" class="form-label">What Is Your Highest Level of Education?</label>
+						<select id="inputState" class="form-select">
+							<option selected>Undergraduate (S.S.C.E.)</option>
+							<option>Graduate (H.N.D)</option>
+							<option>Graduate (BSc/BA/BEng)</option>
+							<option>Post Graduate (MSC/MBA)</option>
+							</select>
+					</div>
 
-      <li><div class="mb-3" class= "info">
-          <label for="exampleInputPassword1" class="form-label">Surname</label>
-          <input type="text" class="form-control" id="exampleInputPassword1" name= "surname" />
-      </div></li>
+					<div class="col-lg-12">
+						<fieldset class="row mb-3">
+							<legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+							<div class="col-sm-10">
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="gridRadios"
+										id="gridRadios1"
+										value="option1"
+										checked
+									/>
+									<label class="form-check-label" for="gridRadios1">
+										Male
+									</label>
+								</div>
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="gridRadios"
+										id="gridRadios2"
+										value="option2"
+									/>
+									<label class="form-check-label" for="gridRadios2">
+										Female
+									</label>
+								</div>
+								<div class="form-check disabled">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="gridRadios"
+										id="gridRadios3"
+										value="option3"
+									/>
+									<label class="form-check-label" for="gridRadios3">
+										Rather Not Say
+									</label>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					<div class="col-lg-12">
+							<p>
+								By applying for the intership, you agree to Genius' Terms and
+								Conditions and Privacy Policy
+							</p>
+						</div>
+					</div>
+					<div class="col-12">
+						<button type="submit" class="btn btn-primary">Register</button>
+						<button type="reset" class="btn btn-primary">Clear Form</button>
+					</div>
+				</div>
+			</div>
+		</form>
 
-      <li><div class="mb-3" class= "info">
-            <label for="exampleInputPassword1" class="form-label">Firstname</label>
-            <input type="text" class="form-control" id="exampleInputPassword1" name= "firstname" />
-      </div></li>
-
-      <li><div class="mb-3" class= "info">
-         <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name= "email" />
-          <div id="emailHelp" class="form-text">
-            We'll never share your email with anyone else.
-          </div>
-      </div></li>
-
-      <li><div class="mb-3" class= "info">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" name= "password">
-      </div></li>
-
-      <!-- <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div> -->
-
-
-        <li><p>Please Choose A Course</p>
-        <select class="form-select form-select-lg mb-3"  class= "info" aria-label=".form-select-lg example">
-          <option selected value="1">HTML</option>
-          <option value="2">CSS</option>
-          <option value="3">REACT JS</option>
-          <option value="4">BOOTSTRAP</option>
-          <option value="5">NODE JS</option>
-          <option value="6">MONGO DB</option>
-          <option value="7">MySQL</option>
-          <option value="8">MOBILE APP DEVELOPMENT</option>
-          <option value="9">GIT $ GITHUB</option>
-          <option value="10">CYBER SECURITY</option>
-          <option value="11">WEB PROGRAMMING</option>
-          <option value="3">SQL</option>
-          <option value="3">JAVA DESKTOP DEVELOOPMENT MANAGEMENT</option>
-          <option value="3">ORACLE SQL</option>
-          <option value="3">DATA STRUCTURES</option>
-          <option value="3">SOFTWARE ARCHITECTURE</option>
-          <option value="3">MICROSERVICE</option>
-          <option value="12">DATABASE MANAGEMENT</option>
-        </select></li>
-
-      <div>
-          <p>By applying for the internship, I agree to <span class= "terms">Genius' Terms and Conditions</span> and 
-              <span class= "terms">Privacy Policy</span>.</p>
-      </div>
-
-      <div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <button type="reset" class="btn btn-primary">Clear Form</button>
-      </div>
-
-     </ul>
-    </form>
-
-    </div>
-
-    <footer>
-      <div>
-        <small>Copyright © Genius Computer Technologies. 2023</small>
-      </div>
-    </footer>
-
-    <!-- jQuery (Bootstrap JS plugins depend on it) -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+		</div>
+		<footer>
+			<div>
+				<small>Copyright © Genius Computer Technologies. 2023</small>
+			</div>
+		</footer>
+		<!-- jQuery (Bootstrap JS plugins depend on it) -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+	</body>
 </html>
