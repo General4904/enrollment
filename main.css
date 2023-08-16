@@ -8,7 +8,7 @@ body {
 }
 
 header {
-	margin: 0;
+	margin: 0 0 3em 0;
 	padding: 1em;
 	background-color: #2b1e5b;
 	color: white;
@@ -34,21 +34,20 @@ h1 {
 }
 
 form {
-	margin: 5em;
-	padding: 0 0 3em 0;
+	/* margin: 5em; */
+	padding: 3em 0 3em 3em;
 	border: 1px solid #2b1e5b;
-	border-radius: 6px;
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* justify-content: center; */
-	/* align-items: center; */
+	border-radius: 0 0 6px 6px;
+	align-items: center;
+	justify-content: center;
 }
 
-form header {
-	margin: 0 0 2em 0;
+#enrol header {
+	margin: 0 0 0 0;
 	background-color: #2b1e5b;
 	color: white;
 	font-size: 22px;
+	border-radius: 1em 1em 0 0;
 }
 
 form .info {
@@ -56,11 +55,8 @@ form .info {
 	padding: 0;
 }
 
-input {
-	margin-bottom: 3em;
-	padding: 5px 5em 5px 5px;
-	border: 1px solid #2b1e5b;
-	border-radius: 6px;
+.form-control {
+	width: 40em;
 }
 
 input value {
@@ -68,6 +64,7 @@ input value {
 }
 
 .btn {
+	margin: 1.5em 0 0 0;
 	background-color: white;
 	border: 1px solid #2b1e5b;
 	color: #2b1e5b;
@@ -89,7 +86,6 @@ input value {
 	color: white;
 	border: none;
 }
-
 .terms {
 	color: #2b1e5b;
 	font-size: 20px;
@@ -124,26 +120,28 @@ footer {
 		/* color: black; */
 	}
 
-	form.row {
+	#enrol header {
+		margin: 0 0 0 0;
+		background-color: #2b1e5b;
+		color: white;
+		font-size: 22px;
+		border-radius: 0;
+	}
+
+	form {
+		padding-left: 0;
+		margin-left: 3px;
+		margin-right: 3px;
 		border: none;
-		margin: 2em 3px;
-		padding: 0 0 2em 0;
 	}
 
-	form header {
-		font-size: 16px;
-		padding: 1em 3px;
-		display: none;
+	.form-control {
+		width: 20em;
 	}
 
-	form .container {
-		padding-right: 0;
-	}
-
-	form .row {
-		padding: 0;
-		width: 360px;
-	}
+	/* select.form-control {
+		width: 22em;
+	} */
 
 	#enrol {
 		margin: 1em 0 1em 0;
@@ -197,9 +195,14 @@ footer {
 		text-align: center;
 	}
 
-	form .row {
-		padding: 0 1em;
+	form {
+		margin: 0;
+		padding: 1em;
 	}
+
+	/* select.form-control {
+		width: 3em;
+	} */
 
 	form .info {
 		margin-top: 2.5em;
